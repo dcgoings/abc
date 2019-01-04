@@ -1,8 +1,10 @@
 {
-    "name": "abc",
+    "name": "Dan's Personal Webpage",
     "version": "2.0.0",
     "author": {
         "name": "Daniel Goings",
+        "firstname": "Dan",
+        "lastname": "Goings",
         "email": "dcg4731@gmail.com"
     },
     "config": {
