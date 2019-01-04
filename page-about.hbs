@@ -9,10 +9,23 @@
     </a>
     {{> "menu-activator-icon"}}
 </nav>
-<header class="post-view-header js-blog-bg-image {{#if feature_image}}" style="background-image: url({{img_url feature_image}}){{else}}no-cover{{/if}}">
-    <div class="post-header-content">
-        <h1 class="post-title js-bg-check">{{title}}</h1>
-    </div>
+
+<header class="main-header js-blog-bg-image no-cover">
+    <div class="main-header-content">
+        <h1 class="page-title js-bg-check"><span>{{@blog.title}}</span></h1>
+        <h2 class="page-description js-bg-check"><span>{{@blog.description}}</span></h2>
+        <div>
+          <a href="mailto:dcg4731@gmail.com" title="E-Mail address - dcg4731@gmail.com">
+              <i class="fa fa-fw fa-paper-plane fa-3x contact-icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dcgoings" title="LinkedIn - @dcgoings">
+              <i class="fa fa-fw fa-linkedin fa-3x contact-icon"></i>
+          </a>
+          <a href="https://www.github.com/dcgoings" title="GitHub - @dcgoings">
+              <i class="fa fa-fw fa-github fa-3x contact-icon"></i>
+          </a>
+        </div>
+      </div>
 </header>
 
 <main class="post-view-content row" role="main">
