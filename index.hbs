@@ -2,31 +2,32 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The big featured header }}
+
 <nav class="main-nav">
     {{> "menu-activator-icon"}}
 </nav>
 
 <header class="main-header js-blog-bg-image {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
-    <div class="main-header-content">
-        {{!-- }}{{#if @blog.logo}}
+     <div class="main-header-content">
+        {{!-- {{#if @blog.logo}}
         <div class="post-logo-container">
             {{!-- <a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
         </div>
         {{/if}} --}}
         {{!-- }}<div class="post-logo-container">
           <i class="fa fa-globe fa-5x" alt="Blog Logo" />
-        </div>--}}
+        </div> --}}
         <h1 class="page-title js-bg-check"><span>{{@blog.title}}</span></h1>
         <h2 class="page-description js-bg-check"><span>{{@blog.description}}</span></h2>
         <div class="contact-icons">
             <a href="mailto:dcg4731@gmail.com" title="E-Mail - dcg4731@gmail.com">
-                <i class="fa fa-fw fa-paper-plane"></i>
+                <i class="fa fa-fw fa-paper-plane" aria-hidden="true"></i>
             </a>
             <a href="https://www.linkedin.com/in/dcgoings" title="LinkedIn - @dcgoings">
-                <i class="fa fa-fw fa-linkedin"></i>
+                <i class="fa fa-fw fa-linkedin" aria-hidden="true"></i>
             </a>
             <a href="https://www.github.com/dcgoings" title="GitHub - @dcgoings">
-                <i class="fa fa-fw fa-github-alt"></i>
+                <i class="fa fa-fw fa-github-alt aria-hidden="true"></i>
             </a>
         </div>
       </div>
